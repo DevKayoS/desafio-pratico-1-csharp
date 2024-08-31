@@ -4,9 +4,40 @@ class Program
 {
     static void Main()
     {
-        string name = Console.ReadLine();
+        Console.WriteLine("Escolha o exercicio digitando o numero correspondente: 1, 2, 3, 4, 5, 6");
+        
+        int exercicio = int.Parse(Console.ReadLine());
 
-        Console.WriteLine($"Olá, {name}! Seja muito bem-vindo!");
+        
+        switch (exercicio)
+        {
+            case 1:
+            {
+                Exercicio1.Desafio();
+            }
+                break;
+            case 2:
+            {
+                Exercicio2.Desafio();
+            }
+                break;
+            case 3:
+            {
+                Exercicio3.Desafio();
+            }
+                break;
+            case 4:
+            {
+                Exercicio4.Desafio();
+            }
+                break;
+            default:
+            {
+                Console.WriteLine("Numero de desafio desconhecido");
+            }
+                break;
+        }
+
     }
 }
 
